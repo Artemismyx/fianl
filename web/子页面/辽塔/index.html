@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                辽塔
+            </h1>
+            <div class="textBox">
+                <p class="x">  辽宁州白塔可视化</p>
+                <p class="x">  辽塔材质</p>
+                <p class="x">  辽塔地图</p>
+                <p class="x">  辽塔高度</p>
+                <p class="x">  辽塔结构</p>
+                <p class="x">  辽塔时间线</p>
+                <p class="x">  辽塔数量</p>
+                <p class="x">  调研资料</p>
+                <p class="x">  项目概述</p>
+                <p class="x">  展示场景</p>
+           
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽庆州白塔可视化/辽庆州白塔可视化_画板 1.jpg" alt="" srcset="">
+                
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔时间线/时间线_画板 1.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔地图/辽塔地图_画板 1.jpg" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔高度/辽塔玫瑰图_画板 1.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔结构/辽塔结构_画板 1.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔时间线/时间线_画板 1.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="设计产出/辽塔数量/境内现存辽塔数量_画板 1.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="调研资料/塔_01.png" alt="" srcset="">
+                <img src="调研资料/塔_02.png" alt="" srcset="">
+                <img src="调研资料/塔_03.png" alt="" srcset="">
+                <img src="调研资料/塔_04.png" alt="" srcset="">
+                <img src="调研资料/塔_05.png" alt="" srcset="">
+                <img src="调研资料/塔_06.png" alt="" srcset="">
+                <img src="调研资料/塔_07.png" alt="" srcset="">
+                <img src="调研资料/塔_08.png" alt="" srcset="">
+                <img src="调研资料/塔_09.png" alt="" srcset="">
+                <img src="调研资料/塔_10.png" alt="" srcset="">
+                <img src="调研资料/塔_11.png" alt="" srcset="">
+                <img src="调研资料/塔_12.png" alt="" srcset="">
+                <img src="调研资料/塔_13.png" alt="" srcset="">
+                <img src="调研资料/塔_14.png" alt="" srcset="">
+                <img src="调研资料/塔_15.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="项目概述/fd1afe473526081c98230832839374d.png" alt="" srcset="">
+                
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="展示场景/场景.png" alt="" srcset="">
+                <img src="展示场景/场景2.png" alt="" srcset="">
+                <img src="展示场景/场景3.png" alt="" srcset="">
+                <img src="展示场景/场景4.png" alt="" srcset="">
+                <img src="展示场景/场景5.png" alt="" srcset="">
+                <img src="展示场景/场景6.png" alt="" srcset="">
+                <img src="展示场景/场景7.png" alt="" srcset="">
+                <img src="展示场景/场景8.png" alt="" srcset="">
+                <img src="展示场景/场景9.png" alt="" srcset="">
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === ' 辽宁州白塔可视化') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔材质') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔地图') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔高度') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔结构') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔时间线') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '  辽塔数量') {
+                    divBox[6].style.display = 'block';
+                } else if (X[i].textContent === '  调研资料') {
+                    divBox[7].style.display = 'block';
+                } else if (X[i].textContent === '  项目概述') {
+                    divBox[8].style.display = 'block';
+                } else if (X[i].textContent === '  展示场景') {
+                    divBox[9].style.display = 'block';
+                }
+        
+
+    });
+        }
+    </script>
+</body>
+</html>

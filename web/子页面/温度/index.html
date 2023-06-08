@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                温度
+            </h1>
+            <div class="textBox">
+                <p class="x"> 视觉干扰</p>
+                <p class="x"> 温度草稿大纲</p>
+                <p class="x"> 温度册子</p>
+                <p class="x"> 温度第一周调研</p>
+               
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="视觉干扰/1.png" alt="" srcset="">
+                <img src="视觉干扰/2.png" alt="" srcset="">
+                <img src="视觉干扰/3.png" alt="" srcset="">
+                <img src="视觉干扰/4.png" alt="" srcset="">
+                <img src="视觉干扰/5.png" alt="" srcset="">
+                <img src="视觉干扰/6.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="温度/草稿大纲/1.png" alt="" srcset="">
+                <img src="温度/草稿大纲/2.png" alt="" srcset="">
+                <img src="温度/草稿大纲/3.png" alt="" srcset="">
+                <img src="温度/草稿大纲/4.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="温度/册子/1.png" alt="" srcset="">
+                <img src="温度/册子/2.png" alt="" srcset="">
+                <img src="温度/册子/3.png" alt="" srcset="">
+                <img src="温度/册子/4.png" alt="" srcset="">
+                <img src="温度/册子/5.png" alt="" srcset="">
+                <img src="温度/册子/6.png" alt="" srcset="">
+                <img src="温度/册子/7.png" alt="" srcset="">
+                <img src="温度/册子/8.png" alt="" srcset="">
+                <img src="温度/册子/9.png" alt="" srcset="">
+                <img src="温度/册子/10.png" alt="" srcset="">
+                <img src="温度/册子/11.png" alt="" srcset="">
+                <img src="温度/册子/12.png" alt="" srcset="">
+                <img src="温度/册子/13.png" alt="" srcset="">
+                <img src="温度/册子/14.png" alt="" srcset="">
+                <img src="温度/册子/15.png" alt="" srcset="">
+                <img src="温度/册子/16.png" alt="" srcset="">
+                <img src="温度/册子/17.png" alt="" srcset="">
+                <img src="温度/册子/18.png" alt="" srcset="">
+                <img src="温度/册子/19.png" alt="" srcset="">
+                <img src="温度/册子/20.png" alt="" srcset="">
+                <img src="温度/册子/21.png" alt="" srcset="">
+                <img src="温度/册子/22.png" alt="" srcset="">
+                <img src="温度/册子/23.png" alt="" srcset="">
+                <img src="温度/册子/24.png" alt="" srcset="">
+                <img src="温度/册子/25.png" alt="" srcset="">
+                <img src="温度/册子/26.png" alt="" srcset="">
+                <img src="温度/册子/27.png" alt="" srcset="">
+                <img src="温度/册子/28.png" alt="" srcset="">
+                <img src="温度/册子/29.png" alt="" srcset="">
+                <img src="温度/册子/30.png" alt="" srcset="">
+                <img src="温度/册子/31.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="温度/第一周调研/温度调研_01.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_02.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_03.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_04.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_05.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_06.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_07.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_08.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_09.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_10.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_11.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_12.png" alt="" srcset="">
+                <img src="温度/第一周调研/温度调研_13.png" alt="" srcset="">
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === ' 视觉干扰') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === ' 温度草稿大纲') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === ' 温度册子') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === ' 温度第一周调研') {
+                    divBox[3].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

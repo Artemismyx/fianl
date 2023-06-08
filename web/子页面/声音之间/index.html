@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                声音之间
+            </h1>
+            <div class="textBox">
+                <p></p>
+                <p class="x">笔触声和机构听写（实验影像）</p>
+                <p class="x">读书声与雨声（实验影像）</p>
+                <p class="x">键盘声与咖啡馆（实验影像）</p>
+                <p class="x">三文鱼和指环王（实验影像）</p>
+                <p class="x">王者与TED（实验影像）</p>
+                <p class="x">心跳和暴风雪壁炉（实验影像）</p>
+                <p class="x">书籍拍摄</p>
+                <p class="x">书籍总览</p>
+                
+                <p class="x">项目简介</p>
+          
+            </div>
+        </div>
+        <div class="B">
+            
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(0).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(1).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(2).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(3).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(4).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(5).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(6).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="书籍/书籍拍摄/IMG_7257.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7258.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7259.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7260.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="书籍/总览/1.png" alt="" srcset="">
+                <img src="书籍/总览/2.png" alt="" srcset="">
+                <img src="书籍/总览/3.png" alt="" srcset="">
+                <img src="书籍/总览/4.png" alt="" srcset="">
+                <img src="书籍/总览/5.png" alt="" srcset="">
+                <img src="书籍/总览/6.png" alt="" srcset="">
+                <img src="书籍/总览/7.png" alt="" srcset="">
+                <img src="书籍/总览/8.png" alt="" srcset="">
+                <img src="书籍/总览/9.png" alt="" srcset="">
+                <img src="书籍/总览/10.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="项目简介/汇报PRE_01.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_02.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_03.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_04.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_05.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_06.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_07.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_08.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_09.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_10.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_11.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '笔触声和机构听写（实验影像）') {                      
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '读书声与雨声（实验影像）') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '键盘声与咖啡馆（实验影像）') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '三文鱼和指环王（实验影像）') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '王者与TED（实验影像）') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '心跳和暴风雪壁炉（实验影像）') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '书籍拍摄') {
+                    divBox[6].style.display = 'block';
+                } else if (X[i].textContent === '书籍总览') {
+                    divBox[7].style.display = 'block';
+                } else if (X[i].textContent === '项目简介') {
+                    divBox[8].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

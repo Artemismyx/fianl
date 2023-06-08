@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                中文字体
+            </h1>
+            <div class="textBox">
+                <p class="x">8字黑体</p>
+                <p class="x">手写描绘四字</p>
+                <p class="x">像素字4个“植”</p>
+                <p class="x">千文字单独</p>
+                <p class="x">千文字诗句合体</p>
+                <p class="x">月露黑体</p>
+              
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="黑体8字/8字黑体.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="手写描绘四字/IMG_0880.JPG" alt="" srcset="">
+                <img src="手写描绘四字/IMG_0881.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="像素字/4个植/像素画-2.png" alt="" srcset="">
+                <img src="像素字/4个植/像素画.png" alt="" srcset="">
+                <img src="像素字/4个植/像素画的副本.png" alt="" srcset="">
+                <img src="像素字/4个植/像素画的副本2.png alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="像素字/千字文8个字/单独/像素画-10.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-11.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-12.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-13.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-14.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-15.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-16.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-2.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-3.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-4.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-5.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-6.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-7.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-8.png" alt="" srcset="">
+                <img src="像素字/千字文8个字/单独/像素画-9.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="像素字/千字文8个字/诗句合体/千字文8个字.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="月露黑体/月露黑体_画板 1 副本.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '8字黑体') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '手写描绘四字') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '像素字4个“植”') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '千文字单独') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '千文字诗句合体') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '月露黑体') {
+                    divBox[5].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

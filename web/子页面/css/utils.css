@@ -1,0 +1,126 @@
+*{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+        @font-face{
+            font-family: myFamily;
+            src: url(../myFamily.ttf);
+        }
+        .A{
+            font-family: myFamily !important;
+        }
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 12px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }

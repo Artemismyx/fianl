@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                模型
+            </h1>
+            <div class="textBox">
+                <p class="x"> 金属</p>
+                <p class="x"> 木材</p>
+                <p class="x"> 泡沫</p>
+                <p class="x"> 塑料</p>
+                <p class="x"> 纸板</p>
+               
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="金属/IMG_9464.JPG" alt="" srcset="">
+                <img src="金属/IMG_9465.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="木材/三视图1.jpeg" alt="" srcset="">
+                <img src="木材/三视图2.jpeg" alt="" srcset="">
+                <img src="木材/木材.jpg" alt="" srcset="">
+                <img src="木材/木材2.jpg" alt="" srcset="">
+                <img src="木材/木材3.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="泡沫/IMG_9060.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9061.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9062.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9066.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9067.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9068.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9077.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9078.JPG" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="塑料/IMG_8679.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8680.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8681.JPG" alt="" srcset="">
+                
+                <img src="塑料/IMG_8683.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8684.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8685.JPG" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="纸板/IMG_8757.JPG" alt="" srcset="">
+                <img src="纸板/IMG_8758.JPG" alt="" srcset="">
+                <img src="纸板/IMG_8759.JPG" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === ' 金属') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === ' 木材') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === ' 泡沫') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === ' 塑料') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === ' 纸板') {
+                    divBox[4].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

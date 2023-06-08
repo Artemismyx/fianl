@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                性别·流动
+            </h1>
+            <div class="textBox">
+                <p class="x">报告册</p>
+                <p class="x">大幅面海报</p>
+                <p class="x">小幅面海报背面</p>
+                <p class="x">小幅面海报正面</p>
+                <p class="x">明信片1</p>
+                <p class="x">明信片2</p>
+                <p class="x">信封参考图纸</p>
+                <p class="x">信封1</p>
+                <p class="x">信封2</p>
+                <p class="x">信纸1</p>
+                <p class="x">信纸2</p>
+       
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="报告册/1.png" alt="" srcset="">
+                <img src="报告册/2.png" alt="" srcset="">
+                <img src="报告册/3.png" alt="" srcset="">
+                <img src="报告册/4.png" alt="" srcset="">
+                <img src="报告册/5.png" alt="" srcset="">
+                <img src="报告册/6.png" alt="" srcset="">
+                <img src="报告册/7.png" alt="" srcset="">
+                <img src="报告册/8.png" alt="" srcset="">
+                <img src="报告册/9.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="大幅面海报/1.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="小幅面海报/背面/背面.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="小幅面海报/正面/小海报1.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报2.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报3.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报4.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="小物件/明信片/明信片1/参考图.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片1/反面.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片1/反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/明信片/明信片2/参考图.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片2/正面.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片2/反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/参考图纸/参考图纸.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/信封1/参考图.png" alt="" srcset="">
+                <img src="小物件/信封/信封1/信封women.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/信封2/参考图.png" alt="" srcset="">
+                <img src="小物件/信封/信封2/信封men.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信纸/信纸1/信纸men正面.png" alt="" srcset="">
+                <img src="小物件/信纸/信纸1/信纸men反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信纸/信纸2/信纸women正面.png" alt="" srcset="">
+                <img src="小物件/信纸/信纸2/信纸women反面.png" alt="" srcset="">
+            </div>
+           
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '报告册') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '大幅面海报') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '小幅面海报背面') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '小幅面海报正面') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '明信片1') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '明信片2') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '信封参考图纸') {
+                    divBox[6].style.display = 'block';
+                } else if (X[i].textContent === '信封1') {
+                    divBox[7].style.display = 'block';
+                } else if (X[i].textContent === '信封2') {
+                    divBox[8].style.display = 'block';
+                } else if (X[i].textContent === '信纸1') {
+                    divBox[9].style.display = 'block';
+                } else if (X[i].textContent === '信纸2') {
+                    divBox[10].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

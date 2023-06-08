@@ -1,0 +1,27 @@
+@font-face{
+    font-family: myFamily;
+    src: url(../myFamily.ttf);
+}
+p{
+    font-family: myFamily !important;
+}
+
+.navheader {
+	z-index:1111;
+}
+
+.navfooter {
+	z-index:11111;
+}
+
+.poemcontainer {
+	z-index:1;
+	position:relative;
+}
+
+.poem {
+	position:absolute;
+	top:100px;
+	left:300px;
+	margin-bottom:100px;
+	}

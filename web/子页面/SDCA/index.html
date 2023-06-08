@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                SDCA
+            </h1>
+            <div class="textBox">
+                <p class="x"> logo</p>
+                <p class="x"> 场景</p>
+                <p class="x"> 品牌色</p>
+                <p class="x"> 纹样</p>
+                <p class="x"> 物料</p>
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/Logo/1 马语兮 BIPS Interview_13.png" alt="" srcset="">
+                <img src="SDCA/Logo/1 马语兮 BIPS Interview_14.png.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/场景/1 马语兮 BIPS Interview_24.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/品牌色/1 马语兮 BIPS Interview_16.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/纹样/1 马语兮 BIPS Interview_17.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_18.png" alt="" srcset="">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_19.png" alt="" srcset="">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_20.png" alt="" srcset="">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_21.png" alt="" srcset="">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_22.png" alt="" srcset="">
+                <img src="SDCA/物料/1 马语兮 BIPS Interview_23.png" alt="" srcset="">
+               
+           
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === ' logo') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === ' 场景') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === ' 品牌色') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === ' 纹样') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === ' 物料') {
+                    divBox[4].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

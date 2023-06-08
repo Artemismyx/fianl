@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title" style="font-size: 131px;">
+                空间造型基础
+            </h1>
+            <div class="textBox">
+                <p class="x">   结课作业</p>
+                <p class="x">   课堂练习</p>
+                <p class="x">   帽子和耳环</p>
+         
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="结课作业/IMG_0571.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0572.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0573.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0574.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0575.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0576.JPG" alt="" srcset="">
+                <img src="结课作业/IMG_0577.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="课堂练习/IMG_0392.JPG" alt="" srcset="">
+                <img src="课堂练习/IMG_0393.JPG" alt="" srcset="">
+                <img src="课堂练习/IMG_0394.JPG" alt="" srcset="">
+                <img src="课堂练习/IMG_0395.JPG" alt="" srcset="">
+                <img src="课堂练习/IMG_0602.PNG" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="帽子和耳环/IMG_0584.JPG" alt="" srcset="">
+                <img src="帽子和耳环/IMG_0588.JPG" alt="" srcset="">
+                <img src="帽子和耳环/IMG_0589.JPG" alt="" srcset="">
+                <img src="帽子和耳环/IMG_0590.JPG" alt="" srcset="">
+                <img src="帽子和耳环/IMG_0593.JPG" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '   结课作业') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '   课堂练习') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '   帽子和耳环') {
+                    divBox[2].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                海刺
+            </h1>
+            <div class="textBox">
+                <p class="x">   入场测试</p>
+                <p class="x">   展览照片</p>
+                <p class="x">   展言</p>
+               
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;padding   top: 163px;">
+                【测试你的带刺DNA】<br>
+                https://www.bilibili.com/video/BV14R4y1r7aU?vd_source=3a8f67c3b3169f7d9538383723495ac4
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="展览照片/IMG_9149.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9150.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9151.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9152.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9153.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9154.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9160.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9161.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9162.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9163.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9165.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9170.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9171.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9172.JPG" alt="" srcset="">
+                <img src="展览照片/IMG_9173.JPG" alt="" srcset="">
+                <img src="展览照片/WechatIMG3374.jpeg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;padding-right: 50px;">
+                <p style="margin: 50px 0;">海刺</p>
+                <p>海刺，</p>
+                <p>是杯中最后一口龙舌兰</p>
+                <p>是破晓前最后一颗星兰</p>
+                <p>是执念，是虚妄</p>
+                <p>是心底的欲望</p>
+                <p>是澄澈的疯狂</p>
+                <p>是仅此一“刺”的末日狂欢</p>
+                <br>
+                <p>海刺，是疯狂的伊甸园，是疯者的乐园。</p>
+                <br>
+                <p>本次展览是一场沉浸式交互展，建立于人们内心最底层的隐晦与疯狂之上的末日狂欢。本次展览的目的，希望在这个喧嚣的让人分不清东南西北的世界里，给予那些被心底压抑着隐忍与难受的人一个可以叫嚣着疯狂与宣泄的狂欢乐园。展览一共会分为入场测试、入场劵及周边领和Leap Motion动态体验三个环节。</p>
+                <br>
+                <p>本次展览高度呈现与观众的互动性，通过上文提及的三个环节进行观展，生成与之对应的海洋动物人格，以此身份进入展览。首先是入场测试，帮助观众脱离自己的人类身份，获得对应的动物人格后，观众可以在物料展示台购买与自己动物人格对应的物料，进入展览后，观众可以在特定的位置上以新的动物人格的身份用特制的感应设备自由控制屏幕上由粒子组成的自己的动物拟人化IP形象，最后重塑自己的动物人格并回归现实。</p>
+                <br>
+                <p>经过展览所创建的一系列体验，希望模拟世界末日来临的前夕，让观众暂时脱离自己原本的身份。在这短暂的狂欢里，所有人都是流浪者，是空心人，没有责任，没有束缚，脱离社会所强加的责任，尽情释放自己压抑在心底的疯狂。</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '   入场测试') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '   展览照片') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '   展言') {
+                    divBox[2].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

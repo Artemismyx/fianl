@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                避难所
+            </h1>
+            <div class="textBox">
+                <p class="x">   海报</p>
+                <p class="x">   视频</p>
+                <p class="x">   文字描述</p>
+                <p class="x">   照片</p>
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="海报/《避难所》海报.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bd">
+                <div class="video">
+                        <video src="5月31日.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="文字描述.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="照片/1.JPG" alt="" srcset="">
+                <img src="照片/2.JPG" alt="" srcset="">
+                <img src="照片/3.JPG" alt="" srcset="">
+                <img src="照片/4.JPG" alt="" srcset="">
+                <img src="照片/5.JPG" alt="" srcset="">
+                <img src="照片/6.JPG" alt="" srcset="">
+                <img src="照片/7.JPG" alt="" srcset="">
+                <img src="照片/8.JPG" alt="" srcset="">
+                <img src="照片/9.JPG" alt="" srcset="">
+                <img src="照片/10.JPG" alt="" srcset="">
+            </div>
+
+
+          
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '   海报') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '   视频') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '   文字描述') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '   照片') {
+                    divBox[3].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                字体Ⅰ
+            </h1>
+            <div class="textBox">
+                <!-- <p>文字描述</p> -->
+                <p class="x">Brown</p>
+                <p class="x">书法练习</p>
+                <!-- <p>字体设计</p> -->
+                <p class="x">海报</p>
+                <p class="x">物料</p>
+                <p class="x">小册子</p>
+                <p class="x">字母大小写</p>
+              
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="brown钢笔锚点勾线3.jpg" alt="" srcset="">
+                <img src="brown进化.jpg" alt="" srcset="">
+                <img src="brown一大一小.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="书法练习/IMG_0725.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0726.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0727.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0728.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0729.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0730.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0731.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0732.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0733.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0734.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0735.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0736.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0737.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0738.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0739.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0740.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0741.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0742.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0743.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0744.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0745.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0746.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="Doppelganger副本.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="物料/DR.jpg" alt="" srcset="">
+                <img src="物料/D.jpg" alt="" srcset="">
+                <img src="物料/E.jpg" alt="" srcset="">
+                <img src="物料/M.jpg" alt="" srcset="">
+                <img src="物料/R.jpg" alt="" srcset="">
+                <img src="物料/万物皆有裂缝.jpg" alt="" srcset="">
+                <img src="物料/万物皆有裂缝副本.jpg" alt="" srcset="">
+                <img src="物料/书.jpg" alt="" srcset="">
+                <img src="物料/场景.jpg" alt="" srcset="">
+                <img src="物料/帆布袋.jpg" alt="" srcset="">
+                <img src="物料/徽章.jpg" alt="" srcset="">
+                <img src="物料/短袖.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="小册子/IMG_0747.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0748.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0749.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0750.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0751.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="字母大小写.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === 'Brown') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '书法练习') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '海报') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '物料') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '小册子') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '字母大小写') {
+                    divBox[5].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
